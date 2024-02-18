@@ -54,7 +54,7 @@ The prebuilt spark image is uploaded to Dockerhub. Out of convenience, the image
 
 If you have an older version of the image, you might need to remove it to upgrade.
 ```bash
-docker image rm tabulario/spark-iceberg && docker-compose pull
+docker image rm eldarelne/spark-iceberg && docker-compose pull
 ```
 
 ### Building the Docker Image locally
@@ -62,20 +62,20 @@ docker image rm tabulario/spark-iceberg && docker-compose pull
 If you want to make changes to the local files, and test them out, you can build the image locally and use that instead:
 
 ```bash
-docker image rm tabulario/spark-iceberg && docker-compose build
+docker image rm eldarelne/spark-iceberg && docker-compose build
 ```
 
 ### Use `Dockerfile` In This Repo
 
-To directly use the Dockerfile in this repo (as opposed to pulling the pre-build `tabulario/spark-iceberg` image), you can use `docker-compose build`.
+To directly use the Dockerfile in this repo (as opposed to pulling the pre-build `eldarelne/spark-iceberg` image), you can use `docker-compose build`.
 
 ### Deploying Changes
 
-To deploy changes to the hosted docker image `tabulario/spark-iceberg`, run the following. (Requires access to the tabulario docker hub account)
+To deploy changes to the hosted docker image `eldarelne/spark-iceberg`, run the following. (Requires access to the eldarelne docker hub account)
 
 ```sh
 cd spark
-docker buildx build -t tabulario/spark-iceberg --platform=linux/amd64,linux/arm64 . --push
+docker buildx build -t eldarelne/spark-iceberg --platform=linux/amd64,linux/arm64 . --push
 ```
 
 ---
@@ -83,4 +83,4 @@ docker buildx build -t tabulario/spark-iceberg --platform=linux/amd64,linux/arm6
 For more information on getting started with using Iceberg, checkout
 the [Quickstart](https://iceberg.apache.org/spark-quickstart/) guide in the official docs.
 
-The repository for the docker image is [located on dockerhub](https://hub.docker.com/r/tabulario/spark-iceberg).
+The repository for the docker image is [located on dockerhub](https://hub.docker.com/r/eldarelne/spark-iceberg).
