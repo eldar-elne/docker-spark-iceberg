@@ -30,6 +30,7 @@ Start up the notebook server by running the following.
 ```
 docker-compose up
 ```
+(keep in mind it might take a while to build)
 
 The notebook server will then be available at http://localhost:8888
 
