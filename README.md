@@ -19,7 +19,7 @@
 
 # Spark + Iceberg Quickstart Image
 
-This is a dockerized spark-iceberg custom playground environment to quickly get up and running with a Spark environment and a local REST
+This is a dockerized spark-iceberg custom playground environment. it allows quickly get up and running with a Spark environment and a local REST
 catalog, MinIO as a storage backend, and MySQL as a source for data replication.
 
 **note**: If you don't have docker installed, you can head over to the [Get Docker](https://docs.docker.com/get-docker/)
@@ -27,12 +27,14 @@ page for installation instructions.
 
 ## Usage
 Start up the notebook server by running the following.
+cd into your repo local directory and run:
 ```
 docker-compose up
 ```
-(keep in mind it might take a while to build)
+(**keep in mind it might take a while to build)
 
 The notebook server will then be available at http://localhost:8888
+and theres an example notebook to play with.
 
 While the notebook server is running, you can use any of the following commands if you prefer to use spark-shell, spark-sql, or pyspark.
 ```
