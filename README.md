@@ -19,8 +19,8 @@
 
 # Spark + Iceberg Quickstart Image
 
-This is a docker compose environment to quickly get up and running with a Spark environment and a local REST
-catalog, and MinIO as a storage backend.
+This is a dockerized spark-iceberg custom playground environment to quickly get up and running with a Spark environment and a local REST
+catalog, MinIO as a storage backend, and MySQL as a source for data replication.
 
 **note**: If you don't have docker installed, you can head over to the [Get Docker](https://docs.docker.com/get-docker/)
 page for installation instructions.
