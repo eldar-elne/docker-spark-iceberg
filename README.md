@@ -26,8 +26,8 @@ catalog, MinIO as a storage backend, and MySQL as a source for data replication.
 page for installation instructions.
 
 ## Usage
-Start up the notebook server by running the following.
-cd into your repo local directory and run:
+Start up the notebook server by running the following:
+```cd ``` into your local repo directory and run:
 ```
 docker-compose up
 ```
